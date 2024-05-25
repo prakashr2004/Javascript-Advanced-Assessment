@@ -1,0 +1,112 @@
+:root {
+    --primaryColor: #19161f;
+    --max-width: 1400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: var(--max-width);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: var(--primaryColor);
+    line-height: 77px;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 10px;
+
+}
+
+.subcontainerDiv {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.productDiv {
+    display: flex;
+    gap: 50px;
+}
+
+.productInformation {
+    width: 250px;
+    height: 300px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 1px solid var(--primaryColor);
+    text-align: center;
+
+}
+
+.productInformation img {
+    width: 450px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.buttonConatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.buttonConatiner .nagBtn {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-align: center;
+}
+
+
+.productPriceInformation {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.productNameInformation {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.mainContainer #leftNav,
+#right {
+    border: none;
+
+}
+
+#leftNav,
+#right i {
+    font-size: large;
+}
+
+/* Classs list add for updateProductList()->fuction */
+
+.nextProductlist {
+    display: block;
+    display: flex;
+}
+
+.hideProductlist {
+    display: none;
+}
